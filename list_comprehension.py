@@ -75,9 +75,24 @@
 # Map(f,L) is a faster way to run an already defined function on each element in a list
 
 # List comprehension
-L = [i**2 for i in range(5)]
-print(L)
+# L = [i**2 for i in range(5)]
+# print(L)
 
-# Map and Lamda
-L2 = list(map((lambda i: i**2), range(5)))
-print(L2)
+# # Map and Lamda
+# L2 = list(map((lambda i: i**2), range(5)))
+# print(L2)
+
+
+# Creating a list of lists
+x = 1
+y = 1
+z = 1
+
+nested_list_min = [0, 0, 0]
+nested_list_max = [x, y, z]
+
+all_combos = [nested_list_min for i in range(3)]
+
+print(nested_list_min)
+print(nested_list_max)
+print(all_combos)
